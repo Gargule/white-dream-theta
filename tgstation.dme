@@ -2963,6 +2963,8 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "THETA\code\game\areas\ThetaMiningArea.dm"
+#include "THETA\code\game\objects\effects\portals.dm"
 #include "THETA\code\game\objects\items\devices\multitool.dm"
 #include "THETA\code\modules\admin\admin.dm"
 #include "THETA\code\modules\client\client_procs.dm"
@@ -3013,4 +3015,7 @@
 #include "THETA\code\modules\jobs\job_types\assistant.dm"
 #include "THETA\code\modules\research\designs\electronics_designs.dm"
 #include "THETA\code\modules\research\techweb\all_nodes.dm"
+#include "THETA\code\modules\shuttle\adv_nav.dm"
+#include "THETA\code\modules\shuttle\shuttle.dm"
+#include "THETA\code\modules\shuttle\shuttle_spawners.dm"
 // END_INCLUDE
