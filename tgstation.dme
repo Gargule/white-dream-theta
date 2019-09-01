@@ -2969,6 +2969,8 @@
 #include "THETA\code\modules\admin\admin.dm"
 #include "THETA\code\modules\client\client_procs.dm"
 #include "THETA\code\modules\client\verbs\looc.dm"
+#include "THETA\code\modules\clothing\suits\combo\combosuit.dm"
+#include "THETA\code\modules\clothing\suits\combo\electrosuit.dm"
 #include "THETA\code\modules\integrated_electronics\data_huds.dm"
 #include "THETA\code\modules\integrated_electronics\NTnetBYpass.dm"
 #include "THETA\code\modules\integrated_electronics\receiver.dm"
