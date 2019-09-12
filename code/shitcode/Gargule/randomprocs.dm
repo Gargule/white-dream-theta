@@ -94,3 +94,43 @@ mob/living/carbon/alien/humanoid/royal/queen/tamed/default_can_use_topic(src_obj
 	. = shared_ui_interaction(src_object)
 	if(. > UI_CLOSE)
 		. = min(., shared_living_ui_distance(src_object)) // Check the distance...
+
+
+
+//////Stupid inverce-proc cuz of /tg/shit
+//I hate that this has to exist
+/proc/slotbit2slotdefine(slotbit) //Keep this up to date with the value of SLOT BITMASKS and SLOTS (the two define sections above)
+	. = 0
+	switch(slotbit)
+		if(ITEM_SLOT_BACK)
+			. = SLOT_BACK
+		if(ITEM_SLOT_MASK)
+			. = SLOT_WEAR_MASK
+		if(ITEM_SLOT_NECK)
+			. = SLOT_NECK
+		if(ITEM_SLOT_BELT)
+			. = SLOT_BELT
+		if(ITEM_SLOT_ID)
+			. = SLOT_WEAR_ID
+		if(ITEM_SLOT_EARS)
+			. = SLOT_EARS
+		if(ITEM_SLOT_EYES)
+			. = SLOT_GLASSES
+		if(ITEM_SLOT_GLOVES)
+			. = SLOT_GLOVES
+		if(ITEM_SLOT_HEAD)
+			. = SLOT_HEAD
+		if(ITEM_SLOT_FEET)
+			. = SLOT_SHOES
+		if(ITEM_SLOT_OCLOTHING)
+			. = SLOT_WEAR_SUIT
+		if(ITEM_SLOT_ICLOTHING)
+			. = SLOT_W_UNIFORM
+//		if(SLOT_L_STORE, SLOT_R_STORE)//unchanged
+//			. = ITEM_SLOT_POCKET
+		if(ITEM_SLOT_HANDS)
+			. = SLOT_HANDS
+		if(ITEM_SLOT_SUITSTORE)
+			. = SLOT_S_STORE
+		if(ITEM_SLOT_BACKPACK)
+			. = SLOT_IN_BACKPACK

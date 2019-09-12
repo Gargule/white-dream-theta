@@ -13,3 +13,14 @@
 	armor = list("melee" = 35, "bullet" = 55, "laser" = 5, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 75, "acid" = 65)
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe)
 	resistance_flags = FIRE_PROOF
+
+	elements_typepaths = list( //list of suit-elements
+			/obj/item/clothing/gloves/combat/maggloves,
+			/obj/item/clothing/shoes/jackboots
+		)
+/obj/item/clothing/suit/combo/electricallsuit/equipped(mob/user, slot)
+	. = ..()
+	if(slot_flags & slotdefine2slotbit(slot))
+		wear_elements(user , 1)
+	else
+		unwear_elements(user) //undefined proc
